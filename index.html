@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Memory Match — Retro Arcade</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="arcade">
+    <h1 class="title">MEMORY <span>MATCH</span></h1>
+
+    <div class="stats">
+      <div class="stat">MOVES<br><span id="moves">0</span></div>
+      <div class="stat">TIME<br><span id="time">0s</span></div>
+      <button id="newGame" class="btn">NEW GAME</button>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <div class="panel">
+      <h2>TOP SCORES</h2>
+      <ol id="leaderboard" class="leaderboard"></ol>
+      <button id="loadExample" class="btn small">LOAD EXAMPLE</button>
+    </div>
+
+    <div id="winMsg" class="win hidden">
+      <p>YOU WIN!</p>
+      <p id="winDetails"></p>
+      <input id="playerName" maxlength="12" placeholder="YOUR NAME">
+      <button id="saveScore" class="btn">SAVE SCORE</button>
+    </div>
+  </div>
+
+  <script src="sample-data/data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
